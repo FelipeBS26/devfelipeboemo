@@ -144,44 +144,57 @@ function displayProjects(projects) {
   const projectsContainer = document.querySelector('.project-container');
 
   projects.forEach((project) => {
-    const projectItem = document.createElement('div');
+    // Cria o container principal do projeto
+    const projectItem = document.createElement('article');
     projectItem.classList.add('project-item');
 
-    const projectImage = document.createElement('div');
-    projectImage.classList.add('project-image');
+    // Cria a imagem
+    const projectFigure = document.createElement('figure');
+    projectFigure.classList.add('project-image');
     const img = document.createElement('img');
     img.src = project.img;
-    img.alt = project.nome + ' - site clone';
-    projectImage.appendChild(img);
+    img.alt = project.nome;
+    projectFigure.appendChild(img);
 
+    // Cria o container de conteúdo
     const projectContent = document.createElement('div');
     projectContent.classList.add('project-content');
+    
     const h2 = document.createElement('h2');
+    h2.classList.add('project-title');
     h2.textContent = project.nome;
+    
     const p = document.createElement('p');
     p.textContent = project.description;
 
-    const projectTec = document.createElement('div');
+    // Cria a lista de tecnologias (ul > li)
+    const projectTec = document.createElement('ul');
     projectTec.classList.add('project-tec');
     project.tecnologias.forEach((tecnologia) => {
-      const tec = document.createElement('p');
+      const tec = document.createElement('li');
       tec.textContent = tecnologia;
       projectTec.appendChild(tec);
     });
 
+    // Cria os links
     const projectLinks = document.createElement('div');
     projectLinks.classList.add('project-links');
 
-    const linkProjeto = document.createElement('a');
-    linkProjeto.href = project.link;
-    linkProjeto.target = '_blank';
-    linkProjeto.textContent = 'Ver projeto';
-    const imgLink = document.createElement('img');
-    imgLink.src = './assests/img/icons/link-arrow.svg';
-    imgLink.alt = '';
-    linkProjeto.appendChild(imgLink);
-    projectLinks.appendChild(linkProjeto);
+    if (project.link && project.link !== "#") {
+      const linkProjeto = document.createElement('a');
+      linkProjeto.href = project.link;
+      linkProjeto.classList.add('project-view-link');
+      linkProjeto.target = '_blank';
+      linkProjeto.textContent = 'Conheça mais';
+      projectLinks.appendChild(linkProjeto);
+    } else {
+      const emBreve = document.createElement('a');
+      emBreve.classList.add('project-view-link');
+      emBreve.textContent = 'Em Breve';
+      projectLinks.appendChild(emBreve);
+    }
 
+    // Se tiver github, adiciona o ícone
     if (project.github) {
       const linkGithub = document.createElement('a');
       linkGithub.href = project.github;
@@ -192,12 +205,13 @@ function displayProjects(projects) {
       projectLinks.appendChild(linkGithub);
     }
 
+    // Monta a estrutura final
     projectContent.appendChild(h2);
     projectContent.appendChild(p);
     projectContent.appendChild(projectTec);
     projectContent.appendChild(projectLinks);
 
-    projectItem.appendChild(projectImage);
+    projectItem.appendChild(projectFigure);
     projectItem.appendChild(projectContent);
 
     projectsContainer.appendChild(projectItem);

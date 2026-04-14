@@ -151,125 +151,56 @@
             <div class="ball"></div>
           </div>
         </header>
-        <div class="project-container">
-          <article class="project-item">
-            <figure class="project-image">
-              <img src="Assets/Portifolio.png" alt="Este portifólio">
-            </figure>
-            <div class="project-content">
-              <h2 class="project-title">Meu portifólio</h2>
-              <p>Desenvolvimento do meu portifólio pessoal.</p>
-              <ul class="project-tec">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>                
-              </ul>
-              <div class="project-links">
-                <a href="project1-link.html" class="project-view-link" target="_blank">Conheça mais</a>
-                <!--<a href="project1-github-link.html" class="project-github-link"><i class="bi bi-github"></i></a>-->
-              </div>
-            </div>
-          </article>
-          <article class="project-item">
-            <figure class="project-image">
-              <img src="Assets/Direito.jpg" alt="Projeto advocacia">
-            </figure>
-            <div class="project-content">
-              <h2 class="project-title">Boemo & Associados</h2>
-              <p>Desenvolvimento voluntário de um landing page para firma de advocacia.</p>
-              <ul class="project-tec">
-                <li>Wordpress</li>
-                <li>Illustrator</li>
-                <li>HTML</li>
-                <li>CSS</li>                
-              </ul>
-              <div class="project-links">
-                <a href="https://lpadv.devfelipeboemo.com/" class="project-view-link" target="_blank">Conheça mais</a>                
-              </div>
-            </div>
-          </article>
-          <article class="project-item">
-            <figure class="project-image">
-              <img src="Assets/Contabilidade.jpg" alt="Projeto contabilidade">
-            </figure>
-            <div class="project-content">
-              <h2 class="project-title"> Cont Silva </h2>
-              <p>Desenvolvimento voluntário de um landing page para escritório de contabilidade.</p>
-              <ul class="project-tec">
-                <li>Wordpress</li>
-                <li>Figma</li>                
-              </ul>
-              <div class="project-links">
-                <a href="" class="project-view-link" target="_blank">Em Breve</a>                
-              </div>
-            </div>
-          </article>
-        </article>
-        <article class="project-item">
-          <figure class="project-image">
-            <img src="Assets/Chat-site.png" alt="Projeto ChatOnCloud">
-          </figure>
-          <div class="project-content">
-            <h2 class="project-title"> Chat On Cloud </h2>
-            <p>Desenvolvimento de Landing Page para empresa privada.</p>
-            <ul class="project-tec">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li> 
-            </ul>
-            <div class="project-links">
-              <a href="https://chatoncloud.com.br/" class="project-view-link" target="_blank">Conheça Mais</a>                
-            </div>
-          </div>
-        </article>                    
-        </div>
+
+        <div class="project-container"></div>
+        
       </div>
     </section>
 
 
     <!-- CONTACT -->
     <section class="contact section js-scroll ativo" id="contact">
-  <div class="container">
-    <div class="section-title">
-      <p>Tem uma pergunta ou proposta, ou apenas quer dizer um oi? Vá em frente.</p>
-      <h1>Contato</h1>          
-      <div class="title-detail">
-        <div class="bar"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
+      <div class="container">
+        <div class="section-title">
+          <p>Tem uma pergunta ou proposta, ou apenas quer dizer um oi? Vá em frente.</p>
+          <h1>Contato</h1>          
+          <div class="title-detail">
+            <div class="bar"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+          </div>
+        </div>
+
+        <div class="contact-container">
+          <form class="field" action="https://formsubmit.co/felipeboemo@hotmail.com" method="POST" data-captcha="true">
+            <!-- Campo oculto para redirecionamento após envio -->
+            <input type="hidden" name="_next" value="https://devfelipeboemo.com/obrigado.html">
+            <!-- Campo oculto para assunto do e-mail -->
+            <input type="hidden" name="_subject" value="Nova Proposta de Trabalho - Portfólio">
+            <!-- Campo oculto para resposta automática -->
+            <input type="hidden" name="_autoresponse" value="Obrigado por sua mensagem! Entrarei em contato em breve.">
+
+            <div class="form-group">
+              <label for="name" class="sr-only">Nome</label>
+              <input class="input-field" type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="sr-only">E-mail</label>
+              <input class="input-field" type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="sr-only">Mensagem</label>
+              <textarea class="input-field" id="message" name="message" placeholder="Deixe sua mensagem aqui" required></textarea>
+            </div>
+
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+        </div>    
       </div>
-    </div>
-
-    <div class="contact-container">
-      <form class="field" action="https://formsubmit.co/felipeboemo@hotmail.com" method="POST" data-captcha="true">
-        <!-- Campo oculto para redirecionamento após envio -->
-        <input type="hidden" name="_next" value="https://devfelipeboemo.com/obrigado.html">
-        <!-- Campo oculto para assunto do e-mail -->
-        <input type="hidden" name="_subject" value="Nova Proposta de Trabalho - Portfólio">
-        <!-- Campo oculto para resposta automática -->
-        <input type="hidden" name="_autoresponse" value="Obrigado por sua mensagem! Entrarei em contato em breve.">
-
-        <div class="form-group">
-          <label for="name" class="sr-only">Nome</label>
-          <input class="input-field" type="text" id="name" name="name" placeholder="Digite seu nome" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email" class="sr-only">E-mail</label>
-          <input class="input-field" type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message" class="sr-only">Mensagem</label>
-          <textarea class="input-field" id="message" name="message" placeholder="Deixe sua mensagem aqui" required></textarea>
-        </div>
-
-        <button class="btn" type="submit">Enviar</button>
-      </form>
-    </div>    
-  </div>
-</section>
+    </section>
     
 
 

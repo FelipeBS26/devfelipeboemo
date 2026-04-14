@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Meu portifólio",
+    "description": "Desenvolvimento do meu portifólio pessoal.",
+    "img": "Assets/Portifolio.png",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "#",
+    "github": "https://github.com/FelipeBS26"
+  },
+  {
+    "nome": "Boemo & Associados",
+    "description": "Desenvolvimento voluntário de uma landing page para firma de advocacia.",
+    "img": "Assets/Direito.jpg",
+    "tecnologias": ["Wordpress", "Illustrator", "HTML", "CSS"],
+    "link": "https://lpadv.devfelipeboemo.com/",
+    "github": ""
+  },
+  {
+    "nome": "Cont Silva",
+    "description": "Desenvolvimento voluntário de uma landing page para escritório de contabilidade.",
+    "img": "Assets/Contabilidade.jpg",
+    "tecnologias": ["Wordpress", "Figma"],
+    "link": "#",
+    "github": ""
+  },
+  {
+    "nome": "Chat On Cloud",
+    "description": "Desenvolvimento de Landing Page para empresa privada.",
+    "img": "Assets/Chat-site.png",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://chatoncloud.com.br/",
+    "github": ""
+  }
+]
