@@ -222,22 +222,34 @@ function displayProjects(projects) {
 const sections = document.querySelectorAll('.js-scroll');
 
 function initAnimacaoScroll() {
-  // CREATE A ANIMATION ON SCROLL TO SHOW OR HIDE OBJECT
+  const sections = document.querySelectorAll('.js-scroll');
+
   if (sections.length) {
-    const windowMetade = window.innerHeight * 0.7;
+    // Opções de configuração do observador
+    const observerOptions = {
+      root: null, // Usa a janela do navegador como área de visão
+      rootMargin: '0px',
+      threshold: 0.2 // A animação dispara quando 20% da seção estiver visível
+    };
 
-    function animaScroll() {
-      sections.forEach((section) => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const isSectionVisible = sectionTop - windowMetade < 0;
-        if (isSectionVisible) section.classList.add('ativo');
-        else section.classList.remove('ativo');
+    // Cria o observador
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Quando entra na tela, adiciona a classe
+          entry.target.classList.add('ativo');
+        } else {
+          // Quando sai da tela, remove a classe (animação repete se voltar)
+          // Se quiser que a animação ocorra apenas uma vez, basta apagar essa linha do 'else'
+          entry.target.classList.remove('ativo');
+        }
       });
-    }
+    }, observerOptions);
 
-    animaScroll();
-
-    window.addEventListener('scroll', animaScroll);
+    // Manda o observador vigiar cada uma das seções
+    sections.forEach((section) => {
+      sectionObserver.observe(section);
+    });
   }
 }
 
