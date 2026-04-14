@@ -644,9 +644,12 @@ body {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Mantém o comportamento original para desktop */
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+  justify-content: center; /* Centraliza perfeitamente a última linha, não importa quantos itens tenham */
+  gap: 15px; /* Substitui o grid-gap antigo de forma mais moderna */
+  max-width: 800px; /* Mantém os ícones agrupados e bonitos */
+  margin: 0 auto; /* Centraliza o bloco todo na tela */
 }
 
 .grid-item {
