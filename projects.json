@@ -4,12 +4,12 @@
     "description": "Desenvolvimento do meu portifólio pessoal.",
     "img": "Assets/Portifolio.png",
     "tecnologias": ["HTML", "CSS", "JavaScript"],
-    "link": "#",
+    "link": "https://devfelipeboemo.com/",
     "github": "https://github.com/FelipeBS26"
   },
   {
     "nome": "Boemo & Associados",
-    "description": "Desenvolvimento voluntário de uma landing page para firma de advocacia.",
+    "description": "Criação de uma presença digital corporativa com foco em conversão e design responsivo, transmitindo autoridade e confiança para o setor jurídico.",
     "img": "Assets/Direito.jpg",
     "tecnologias": ["Wordpress", "Illustrator", "HTML", "CSS"],
     "link": "https://lpadv.devfelipeboemo.com/",
@@ -17,18 +17,18 @@
   },
   {
     "nome": "Cont Silva",
-    "description": "Desenvolvimento voluntário de uma landing page para escritório de contabilidade.",
+    "description": "Design e desenvolvimento de uma interface clara e objetiva para o setor contábil, otimizando a experiência do usuário na busca por serviços financeiros.",
     "img": "Assets/Contabilidade.jpg",
     "tecnologias": ["Wordpress", "Figma"],
     "link": "#",
     "github": ""
   },
-  {
+{
     "nome": "Chat On Cloud",
-    "description": "Desenvolvimento de Landing Page para empresa privada.",
+    "description": "Desenvolvimento front-end de uma plataforma SaaS. O projeto incluiu a arquitetura de interfaces simples e elegantes para um chat interno, módulos de treinamento corporativo e muito mais.",
     "img": "Assets/Chat-site.png",
-    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "tecnologias": ["JavaScript", "PHP", "SCSS", "Vue.js", "Blade"],
     "link": "https://chatoncloud.com.br/",
     "github": ""
-  }
+    }
 ]
