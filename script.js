@@ -254,3 +254,51 @@ function initAnimacaoScroll() {
 }
 
 initAnimacaoScroll();
+
+function initFormSubmit() {
+  const form = document.querySelector('.js-form');
+  const statusDiv = document.querySelector('.form-status');
+  const btn = form ? form.querySelector('.btn') : null;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Impede o recarregamento da página
+      
+      // Feedback visual de carregamento
+      const originalBtnText = btn.innerText;
+      btn.innerText = 'A enviar...';
+      btn.disabled = true;
+      statusDiv.style.display = 'none';
+      statusDiv.className = 'form-status';
+      
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json' // Diz ao FormSubmit que queremos a resposta em JSON (sem redirecionamento)
+          }
+        });
+
+        if (response.ok) {
+          statusDiv.innerText = 'Mensagem enviada com sucesso! Entrarei em contacto em breve.';
+          statusDiv.classList.add('success');
+          form.reset(); // Limpa os campos do formulário
+        } else {
+          throw new Error('Erro ao enviar');
+        }
+      } catch (error) {
+        statusDiv.innerText = 'Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde.';
+        statusDiv.classList.add('error');
+      } finally {
+        // Restaura o botão original
+        btn.innerText = originalBtnText;
+        btn.disabled = false;
+      }
+    });
+  }
+}
+
+initFormSubmit();

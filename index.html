@@ -173,13 +173,10 @@
         </div>
 
         <div class="contact-container">
-          <form class="field" action="https://formsubmit.co/felipeboemo@hotmail.com" method="POST" data-captcha="true">
-            <!-- Campo oculto para redirecionamento após envio -->
-            <input type="hidden" name="_next" value="https://devfelipeboemo.com/obrigado.html">
-            <!-- Campo oculto para assunto do e-mail -->
+          <form class="field js-form" action="https://formsubmit.co/felipeboemo@hotmail.com" method="POST">
+            
+            <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="Nova Proposta de Trabalho - Portfólio">
-            <!-- Campo oculto para resposta automática -->
-            <input type="hidden" name="_autoresponse" value="Obrigado por sua mensagem! Entrarei em contato em breve.">
 
             <div class="form-group">
               <label for="name" class="sr-only">Nome</label>
@@ -197,8 +194,10 @@
             </div>
 
             <button class="btn" type="submit">Enviar</button>
+            
+            <div class="form-status"></div>
           </form>
-        </div>    
+        </div>   
       </div>
     </section>
     
