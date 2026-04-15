@@ -1,0 +1,34 @@
+[
+  {
+    "nome": "Meu portifólio",
+    "description": "Desenvolvimento do meu portifólio pessoal.",
+    "img": "Assets/Portifolio.png",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://devfelipeboemo.com/",
+    "github": "https://github.com/FelipeBS26"
+  },
+  {
+    "nome": "Boemo & Associados",
+    "description": "Criação de uma presença digital corporativa com foco em conversão e design responsivo, transmitindo autoridade e confiança para o setor jurídico.",
+    "img": "Assets/Direito.jpg",
+    "tecnologias": ["Wordpress", "Illustrator", "HTML", "CSS"],
+    "link": "https://lpadv.devfelipeboemo.com/",
+    "github": ""
+  },
+  {
+    "nome": "Cont Silva",
+    "description": "Design e desenvolvimento de uma interface clara e objetiva para o setor contábil, otimizando a experiência do usuário na busca por serviços financeiros.",
+    "img": "Assets/Contabilidade.jpg",
+    "tecnologias": ["Wordpress", "Figma"],
+    "link": "#",
+    "github": ""
+  },
+{
+    "nome": "Chat On Cloud",
+    "description": "Desenvolvimento front-end de uma plataforma SaaS. O projeto incluiu a arquitetura de interfaces simples e elegantes para um chat interno, módulos de treinamento corporativo e muito mais.",
+    "img": "Assets/Chat-site.png",
+    "tecnologias": ["JavaScript", "PHP", "SCSS", "Vue.js", "Blade"],
+    "link": "https://chatoncloud.com.br/",
+    "github": ""
+    }
+]
