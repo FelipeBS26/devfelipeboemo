@@ -1,12 +1,28 @@
 [
   {
+    "nome": "Chat On Cloud",
+    "description": "Desenvolvimento front-end de uma plataforma SaaS. O projeto incluiu a arquitetura de interfaces simples e elegantes para um chat interno, módulos de treinamento corporativo e muito mais.",
+    "img": "Assets/Chat-site.png",
+    "tecnologias": ["JavaScript", "PHP", "SCSS", "Vue.js", "Blade"],
+    "link": "https://chatoncloud.com.br/",
+    "github": ""
+    },
+  {
+    "nome": "Dr. Alexandre Nunes - Rinoplastia",
+    "description": "Design e desenvolvimento de uma landing page de alto padrão focada em conversão. A interface foi estruturada com rigor em UX/UI para transmitir autoridade, luxo e confiança, garantindo uma navegação fluida para pacientes buscando procedimentos estéticos premium.",
+    "img": "Assets/Dr-Alexandre.png",
+    "tecnologias": ["HTML", "JavaScript", "CSS"],
+    "link": "https://felipebs26.github.io/Dr.AlexandreNunes/",
+    "github": "https://github.com/FelipeBS26/Dr.AlexandreNunes"
+    },
+  {
     "nome": "Meu portifólio",
     "description": "Desenvolvimento do meu portifólio pessoal.",
     "img": "Assets/Portifolio.png",
     "tecnologias": ["HTML", "CSS", "JavaScript"],
     "link": "https://devfelipeboemo.com/",
     "github": "https://github.com/FelipeBS26"
-  },
+    },
   {
     "nome": "Boemo & Associados",
     "description": "Criação de uma presença digital corporativa com foco em conversão e design responsivo, transmitindo autoridade e confiança para o setor jurídico.",
@@ -22,13 +38,6 @@
     "tecnologias": ["Wordpress", "Figma"],
     "link": "#",
     "github": ""
-  },
-{
-    "nome": "Chat On Cloud",
-    "description": "Desenvolvimento front-end de uma plataforma SaaS. O projeto incluiu a arquitetura de interfaces simples e elegantes para um chat interno, módulos de treinamento corporativo e muito mais.",
-    "img": "Assets/Chat-site.png",
-    "tecnologias": ["JavaScript", "PHP", "SCSS", "Vue.js", "Blade"],
-    "link": "https://chatoncloud.com.br/",
-    "github": ""
-    }
+  }
+
 ]
