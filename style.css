@@ -719,8 +719,9 @@ body {
 
 .project-image img {
   width: 100%;
-  aspect-ratio: 4 / 3; /* Força todas as imagens a terem a mesma proporção (widescreen) */
-  object-fit: cover; /* Garante que a imagem preenche o espaço sem distorcer */
+  aspect-ratio: 16 / 9; /* 16/9 fica mais elegante para prints de tela que 4/3 */
+  object-fit: cover;
+  object-position: top center; /* CRUCIAL: Faz a imagem mostrar sempre o topo (cabeçalho do site) e não o meio */
   border-radius: 12px; 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05), 0 5px 15px rgba(0, 0, 0, 0.03);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -1155,11 +1156,7 @@ footer {
     bottom: 60px;
   }
 
-  /* Ajustes para as imagens */
-  .project-image img {
-    height: 250px; /* Reduz a altura em telas menores */
-    border-radius: 15px; /* Ajusta o raio para telas pequenas */
-  }
+ 
 }
 
 @media screen and (min-width: 960px) {
@@ -1177,10 +1174,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .project-image img {
-    width: 616px;
-    height: auto; /* Mantém proporção */
-  }
+  
 }
 
 @media screen and (min-width: 1280px) {
@@ -1235,9 +1229,7 @@ footer {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
   }
 
-  .project-image img {
-    height: 200px; /* Ajusta ainda mais em telas muito pequenas */
-  }
+
 
   /* Ajuste para o campo de input no mobile */
   .input-field {
