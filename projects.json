@@ -8,9 +8,9 @@
     "github": ""
     },
   {
-    "nome": "Dr. Alexandre Nunes - Rinoplastia",
+    "nome": "Dr. Alexandre Nunes",
     "description": "Design e desenvolvimento de uma landing page de alto padrão focada em conversão. A interface foi estruturada com rigor em UX/UI para transmitir autoridade, luxo e confiança, garantindo uma navegação fluida para pacientes buscando procedimentos estéticos premium.",
-    "img": "Assets/Dr-Alexandre.png",
+    "img": "Assets/Dr-alexandre.png",
     "tecnologias": ["HTML", "JavaScript", "CSS"],
     "link": "https://felipebs26.github.io/Dr.AlexandreNunes/",
     "github": "https://github.com/FelipeBS26/Dr.AlexandreNunes"
@@ -26,7 +26,7 @@
   {
     "nome": "Pearson Specter Litt",
     "description": "Criação de uma presença digital corporativa com foco em conversão e design responsivo, transmitindo autoridade e confiança para o setor jurídico, inspirado na série Suits.",
-    "img": "Assets/Dr-alexandre.png",
+    "img": "Assets/Direito.jpg",
     "tecnologias": ["Wordpress", "Illustrator", "HTML", "CSS"],
     "link": "https://lpadv.devfelipeboemo.com/",
     "github": ""
