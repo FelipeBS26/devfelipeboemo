@@ -54,6 +54,12 @@ span {
   display: inline-block;
 }
 
+html, body {
+  overflow-x: hidden; /* Corta qualquer conteúdo que tente vazar para as laterais */
+  width: 100%;
+  max-width: 100vw;
+}
+
 /*----------THEME COLOR----------*/
 
 body.light_theme {
